@@ -56,5 +56,5 @@ export default defineConfig({
   // For GitHub Pages, use the repository name as base path
   // Example: base: '/repository-name/'
   // For custom domain, use: base: './'
-  base: process.env.NODE_ENV === 'production' ? './' : '/',
+  base: '/Alenton-Perfect-Touch/',
 })

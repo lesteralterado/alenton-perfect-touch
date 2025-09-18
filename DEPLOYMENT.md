@@ -124,6 +124,16 @@ base: '/alenton-design/'
    git push origin main
    ```
 
+2. **Alternative: Use Automated Deployment Script**
+   ```bash
+   # Windows PowerShell
+   .\deploy-to-github.bat
+
+   # Linux/Mac Terminal
+   ./deploy-to-github.sh
+   ```
+   The script will automatically configure everything for your repository!
+
 2. **Enable GitHub Pages**
    - Go to your repository on GitHub
    - Navigate to **Settings** → **Pages**

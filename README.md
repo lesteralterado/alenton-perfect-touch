@@ -29,6 +29,15 @@ git remote add origin https://github.com/your-client/repository-name.git
 git push -u origin main
 ```
 
+### Alternative: Use Deployment Script
+```bash
+# For Windows PowerShell
+.\deploy-to-github.bat
+
+# For Linux/Mac
+./deploy-to-github.sh
+```
+
 ### 3. Enable GitHub Pages
 - Go to repository **Settings** → **Pages**
 - Under **Source**, select **GitHub Actions**
