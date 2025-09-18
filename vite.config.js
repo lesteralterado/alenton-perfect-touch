@@ -56,5 +56,12 @@ export default defineConfig({
   // For GitHub Pages, use the repository name as base path
   // Example: base: '/repository-name/'
   // For custom domain, use: base: './'
-  base: '/Alenton-Perfect-Touch/',
+
+  // REPLACE 'your-repository-name' with your actual GitHub repository name
+  // Example: if your repo is 'my-portfolio', use: base: '/my-portfolio/'
+  base: process.env.NODE_ENV === 'production'
+    ? (process.env.GITHUB_REPOSITORY
+        ? `/${process.env.GITHUB_REPOSITORY.split('/')[1]}/`
+        : '/alenton-perfect-touch/')  // ← CHANGE THIS to your repo name
+    : '/',
 })
