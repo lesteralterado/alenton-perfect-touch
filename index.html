@@ -1,13 +1,21 @@
 <!doctype html>
 <html lang="en">
+  <!-- Document Head: Contains metadata and resource links for the page -->
   <head>
     <meta charset="UTF-8" />
+    <meta name="description" content="Portfolio of Alenton - Perfect Touch, showcasing graphic design work." />
+    <meta name="author" content="Alenton" />
+    <meta name="theme-color" content="#ffffff" />
     <link rel="icon" type="image/svg+xml" href="/logo.png" />
+    <link rel="preload" href="/logo.png" as="image" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Alenton - Perfect Touch</title>
   </head>
   <body>
+    <!-- Main Application Root: Where the React app will be mounted -->
     <div id="root"></div>
+    <!-- Fallback for JavaScript disabled: Provides user feedback if JS is off -->
+    <noscript>This application requires JavaScript to function properly. Please enable JavaScript in your browser.</noscript>
     <script type="module" src="./src/main.jsx"></script>
   </body>
 </html>
